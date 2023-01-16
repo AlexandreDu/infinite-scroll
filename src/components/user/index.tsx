@@ -12,7 +12,7 @@ export function User({ images, name }: UserProps) {
   return (
     <Styled.User>
       <Avatar src={images.small} srcSet={srcSet} sizes={sizes} alt={name} />
-      <span>{name}</span>
+      <Styled.UserTitle>{name}</Styled.UserTitle>
     </Styled.User>
   );
 }
